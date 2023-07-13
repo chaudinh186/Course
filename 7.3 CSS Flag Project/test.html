@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ve Hinh</title>
+    <style>
+        .square{
+            height: 200px;
+            width: 200px;
+            background-color: orangered ;
+        }
+        .circle{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: blue;
+        }
+        .elip{
+            height: 200px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: orange;
+        }
+        .triangle{
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 200px solid black;
+        }
+        .star{
+     width: 0;
+     height: 0;
+     margin: 60px 0;
+     color: yellow;
+     position: relative;
+     display: block;
+     border-right: 100px solid transparent;
+     border-bottom: 70px solid yellow;
+     border-left: 100px solid transparent;
+     transform: rotate(35deg);
+      }
+    .star:before {
+     height: 0;
+     width: 0;
+     position: absolute;
+     display: block;
+     top: -45px;
+     left: -65px;
+     border-bottom: 80px solid yellow;
+     border-left: 30px solid transparent;
+     border-right: 30px solid transparent;
+     content: '';
+     transform: rotate(-35deg);
+     }
+    .star:after {
+     content: '';
+     width: 0;
+     height: 0;
+     position: absolute;
+     display: block;
+     top: 3px;
+     left: -105px;
+     color: yellow;
+     border-right: 100px solid transparent;
+     border-bottom: 70px solid yellow;
+     border-left: 100px solid transparent;
+     transform: rotate(-70deg);
+    }
+    .flagvn{
+        width: 500px;
+        height: 300px;
+        background-color: red;
+    }
+
+    </style>
+</head>
+<body>
+        <div class="square"></div>
+        <div class="circle"></div>
+        <div class="elip"></div>
+        <div class="triangle"></div>
+        <div class="flagvn">
+        <div class="star"></div>
+    </div>
+
+    
+</body>
+</html>
